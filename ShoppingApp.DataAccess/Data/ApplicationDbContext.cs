@@ -12,6 +12,7 @@ namespace ShoppingApp.DataAccess.Data
             
         }
         public DbSet<Categories>tblCategories { get; set; }
+        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

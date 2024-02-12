@@ -2229,6 +2229,10 @@
         }
       },
       "ShoppingApp.Models/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Identity.Core": "8.0.1",
+          "Microsoft.Extensions.Identity.Stores": "8.0.1"
+        },
         "runtime": {
           "ShoppingApp.Models.dll": {}
         }
