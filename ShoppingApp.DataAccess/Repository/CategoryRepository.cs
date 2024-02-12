@@ -16,11 +16,6 @@ namespace ShoppingApp.DataAccess.Repository
         {
             this._db = db;            
         }
-        public void Save()
-        {
-            _db.SaveChanges();
-        }
-
         public void Update(Categories entity)
         {
             _db.Update(entity);

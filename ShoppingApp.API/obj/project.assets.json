@@ -442,11 +442,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.API\\ShoppingApp.API.csproj",
+      "projectUniqueName": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.API\\ShoppingApp.API.csproj",
       "projectName": "ShoppingApp.API",
-      "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.API\\ShoppingApp.API.csproj",
+      "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.API\\ShoppingApp.API.csproj",
       "packagesPath": "C:\\Users\\iammy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.API\\obj\\",
+      "outputPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\iammy\\AppData\\Roaming\\NuGet\\NuGet.Config",

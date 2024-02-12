@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp\\ShoppingApp.csproj": {}
+    "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp\\ShoppingApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.DataAccess\\ShoppingApp.DataAccess.csproj": {
+    "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.DataAccess\\ShoppingApp.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.DataAccess\\ShoppingApp.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.DataAccess\\ShoppingApp.DataAccess.csproj",
         "projectName": "ShoppingApp.DataAccess",
-        "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.DataAccess\\ShoppingApp.DataAccess.csproj",
+        "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.DataAccess\\ShoppingApp.DataAccess.csproj",
         "packagesPath": "C:\\Users\\iammy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\iammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Models\\ShoppingApp.Models.csproj": {
-                "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Models\\ShoppingApp.Models.csproj"
+              "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Models\\ShoppingApp.Models.csproj": {
+                "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Models\\ShoppingApp.Models.csproj"
               },
-              "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj": {
-                "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj"
+              "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj": {
+                "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj"
               }
             }
           }
@@ -47,6 +47,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.1, )"
@@ -82,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Models\\ShoppingApp.Models.csproj": {
+    "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Models\\ShoppingApp.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Models\\ShoppingApp.Models.csproj",
+        "projectUniqueName": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Models\\ShoppingApp.Models.csproj",
         "projectName": "ShoppingApp.Models",
-        "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Models\\ShoppingApp.Models.csproj",
+        "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Models\\ShoppingApp.Models.csproj",
         "packagesPath": "C:\\Users\\iammy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Models\\obj\\",
+        "outputPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\iammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -137,14 +141,14 @@
         }
       }
     },
-    "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj": {
+    "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj",
         "projectName": "ShoppingApp.Utility",
-        "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj",
+        "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj",
         "packagesPath": "C:\\Users\\iammy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Utility\\obj\\",
+        "outputPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\iammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -192,14 +196,14 @@
         }
       }
     },
-    "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp\\ShoppingApp.csproj": {
+    "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp\\ShoppingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp\\ShoppingApp.csproj",
+        "projectUniqueName": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp\\ShoppingApp.csproj",
         "projectName": "ShoppingApp",
-        "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp\\ShoppingApp.csproj",
+        "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp\\ShoppingApp.csproj",
         "packagesPath": "C:\\Users\\iammy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp\\obj\\",
+        "outputPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\iammy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -216,11 +220,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.DataAccess\\ShoppingApp.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.DataAccess\\ShoppingApp.DataAccess.csproj"
+              "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.DataAccess\\ShoppingApp.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.DataAccess\\ShoppingApp.DataAccess.csproj"
               },
-              "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Models\\ShoppingApp.Models.csproj": {
-                "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Models\\ShoppingApp.Models.csproj"
+              "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Models\\ShoppingApp.Models.csproj": {
+                "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Models\\ShoppingApp.Models.csproj"
               }
             }
           }
@@ -239,11 +243,23 @@
               "target": "Package",
               "version": "[8.0.1, )"
             },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[8.0.1, )"
             },

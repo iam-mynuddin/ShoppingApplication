@@ -10,3 +10,15 @@ C:\Users\iammy\source\repos\ShoppingApp\ShoppingApp.Models\obj\Debug\net8.0\Shop
 C:\Users\iammy\source\repos\ShoppingApp\ShoppingApp.Models\obj\Debug\net8.0\refint\ShoppingApp.Models.dll
 C:\Users\iammy\source\repos\ShoppingApp\ShoppingApp.Models\obj\Debug\net8.0\ShoppingApp.Models.pdb
 C:\Users\iammy\source\repos\ShoppingApp\ShoppingApp.Models\obj\Debug\net8.0\ref\ShoppingApp.Models.dll
+C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Models\bin\Debug\net8.0\ShoppingApp.Models.deps.json
+C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Models\bin\Debug\net8.0\ShoppingApp.Models.dll
+C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Models\bin\Debug\net8.0\ShoppingApp.Models.pdb
+C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Models\obj\Debug\net8.0\ShoppingApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Models\obj\Debug\net8.0\ShoppingApp.Models.AssemblyInfoInputs.cache
+C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Models\obj\Debug\net8.0\ShoppingApp.Models.AssemblyInfo.cs
+C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Models\obj\Debug\net8.0\ShoppingApp.Models.csproj.CoreCompileInputs.cache
+C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Models\obj\Debug\net8.0\ShoppingApp.Models.sourcelink.json
+C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Models\obj\Debug\net8.0\ShoppingApp.Models.dll
+C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Models\obj\Debug\net8.0\refint\ShoppingApp.Models.dll
+C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Models\obj\Debug\net8.0\ShoppingApp.Models.pdb
+C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Models\obj\Debug\net8.0\ref\ShoppingApp.Models.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Models\\ShoppingApp.Models.csproj": {}
+    "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Models\\ShoppingApp.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Models\\ShoppingApp.Models.csproj": {
+    "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Models\\ShoppingApp.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Models\\ShoppingApp.Models.csproj",
+        "projectUniqueName": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Models\\ShoppingApp.Models.csproj",
         "projectName": "ShoppingApp.Models",
-        "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Models\\ShoppingApp.Models.csproj",
+        "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Models\\ShoppingApp.Models.csproj",
         "packagesPath": "C:\\Users\\iammy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Models\\obj\\",
+        "outputPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\iammy\\AppData\\Roaming\\NuGet\\NuGet.Config",

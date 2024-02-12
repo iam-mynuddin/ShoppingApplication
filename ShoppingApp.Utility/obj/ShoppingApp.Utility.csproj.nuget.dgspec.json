@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj": {}
+    "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj": {
+    "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj",
         "projectName": "ShoppingApp.Utility",
-        "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj",
+        "projectPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Utility\\ShoppingApp.Utility.csproj",
         "packagesPath": "C:\\Users\\iammy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApp\\ShoppingApp.Utility\\obj\\",
+        "outputPath": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\iammy\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -5,18 +5,19 @@ using ShoppingApp.DataAccess.Repository.IRepository;
 using ShoppingApp.Models;
 using System.Text.RegularExpressions;
 
-namespace ShoppingApp.Controllers
+namespace ShoppingApp.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
-        private readonly ICategoryRepository _categoryRepo;
-        public CategoryController(ICategoryRepository db)
+        private readonly IUnitOfWork _unitOfWork;
+        public CategoryController(IUnitOfWork unitOfWork)
         {
-            this._categoryRepo = db;   
+            _unitOfWork = unitOfWork;
         }
         public IActionResult Index()
         {
-            var objCategoryList=_categoryRepo.GetAll().ToList();
+            var objCategoryList = _unitOfWork.Category.GetAll().ToList();
             return View(objCategoryList);
         }
         public IActionResult Create()
@@ -26,14 +27,14 @@ namespace ShoppingApp.Controllers
         [HttpPost]
         public IActionResult Create(Categories category)
         {
-            if(Regex.IsMatch(category.CategoryName,@"\d"))
+            if (Regex.IsMatch(category.CategoryName, @"\d"))
             {
                 ModelState.AddModelError("CategoryName", "Category name should not contain numbers!");
             }
             if (ModelState.IsValid)
             {
-                _categoryRepo.Add(category);
-                _categoryRepo.Save();
+                _unitOfWork.Category.Add(category);
+                _unitOfWork.Save();
                 TempData["sucess"] = "Category added sucessfully!";
                 return RedirectToAction("Index", "Category");
             }
@@ -41,11 +42,11 @@ namespace ShoppingApp.Controllers
         }
         public IActionResult Edit(int? id)
         {
-            if(id == null || id < 0)
+            if (id == null || id < 0)
             {
                 return NotFound();
             }
-            Categories? category = _categoryRepo.Get(x=>x.CategoryId==id);
+            Categories? category = _unitOfWork.Category.Get(x => x.CategoryId == id);
             if (category == null)
             {
                 return NotFound();
@@ -61,8 +62,8 @@ namespace ShoppingApp.Controllers
             }
             if (ModelState.IsValid)
             {
-                _categoryRepo.Update(category);
-                _categoryRepo.Save();
+                _unitOfWork.Category.Update(category);
+                _unitOfWork.Save();
                 TempData["sucess"] = "Category edited sucessfully!";
                 return RedirectToAction("Index", "Category");
             }
@@ -74,7 +75,7 @@ namespace ShoppingApp.Controllers
             {
                 return NotFound();
             }
-            Categories? category = _categoryRepo.Get(x=>x.CategoryId==id);
+            Categories? category = _unitOfWork.Category.Get(x => x.CategoryId == id);
             if (category == null)
             {
                 return NotFound();
@@ -84,10 +85,10 @@ namespace ShoppingApp.Controllers
         [HttpPost]
         public IActionResult Delete(Categories category)
         {
-            if (category.CategoryId>=0)
+            if (category.CategoryId >= 0)
             {
-                _categoryRepo.Remove(category);
-                _categoryRepo.Save();
+                _unitOfWork.Category.Remove(category);
+                _unitOfWork.Save();
                 TempData["sucess"] = "Category deleted sucessfully!";
                 return RedirectToAction("Index", "Category");
             }

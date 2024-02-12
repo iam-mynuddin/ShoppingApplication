@@ -10,6 +10,5 @@ namespace ShoppingApp.DataAccess.Repository.IRepository
     public interface ICategoryRepository:IRepository<Categories>
     {
         void Update(Categories entity);
-        void Save();
     }
 }
