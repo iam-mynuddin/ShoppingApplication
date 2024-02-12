@@ -1,0 +1,29 @@
+﻿@model Categories
+<form method="post">
+    @Html.HiddenFor(x => x.CategoryId)
+    <div class="container">
+        <div class="row pt-4 pb-4">
+            <div class="col-6">
+                <h1>Delete category</h1>
+            </div>
+            <div class="col-6 text-end">
+                <a class="btn btn-primary" asp-controller="Category" asp-action="Index"><i class="bi bi-arrow-left"></i>Back</a>
+            </div>
+        </div>
+        <hr />
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="CategoryName"></label>
+            <input disabled class="form-control" asp-for="CategoryName" />
+        </div>
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="DisplayOrder"></label>
+            <input disabled class="form-control" asp-for="DisplayOrder" />
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-outline-danger" style="width:150px;justify-content:center;">Delete</button>
+            </div>
+        </div>
+    </div>
+</form>

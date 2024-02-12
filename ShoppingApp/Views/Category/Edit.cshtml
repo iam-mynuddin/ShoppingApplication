@@ -1,0 +1,37 @@
+﻿@model Categories
+<form method="post">
+    @Html.HiddenFor(x=>x.CategoryId)
+    <div class="container">
+        <div class="row pt-4 pb-4">
+            <div class="col-6">
+                <h1>Edit category</h1>
+            </div>
+            <div class="col-6 text-end">
+                <a class="btn btn-primary" asp-controller="Category" asp-action="Index"><i class="bi bi-arrow-left"></i>Back</a>
+            </div>
+        </div>
+        <hr />
+        <div asp-validation-summary="All"></div>
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="CategoryName"></label>
+            <input class="form-control" asp-for="CategoryName" />
+            <span asp-validation-for="CategoryName" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="DisplayOrder"></label>
+            <input class="form-control" asp-for="DisplayOrder" />
+            <span asp-validation-for="DisplayOrder" class="text-danger"></span>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-outline-primary" style="width:150px;justify-content:center;">Edit</button>
+            </div>
+        </div>
+    </div>
+</form>
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial"></partial>
+    }
+}
