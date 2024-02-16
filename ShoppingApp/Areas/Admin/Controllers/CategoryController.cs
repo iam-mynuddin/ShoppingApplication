@@ -1,13 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ShoppingApp.DataAccess;
 using ShoppingApp.DataAccess.Data;
 using ShoppingApp.DataAccess.Repository.IRepository;
 using ShoppingApp.Models;
+using ShoppingApp.Utility;
 using System.Text.RegularExpressions;
 
 namespace ShoppingApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles =StaticDetails.ROLE_ADMIN)]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

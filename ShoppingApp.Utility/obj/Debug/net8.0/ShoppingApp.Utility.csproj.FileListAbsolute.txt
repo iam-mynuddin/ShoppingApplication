@@ -22,3 +22,4 @@ C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\obj\Debug\ne
 C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\obj\Debug\net8.0\refint\ShoppingApp.Utility.dll
 C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\obj\Debug\net8.0\ShoppingApp.Utility.pdb
 C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\obj\Debug\net8.0\ref\ShoppingApp.Utility.dll
+C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\obj\Debug\net8.0\ShoppingApp.Utility.csproj.AssemblyReference.cache

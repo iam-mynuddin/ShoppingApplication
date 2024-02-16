@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShoppingApp.Utility")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9423e00fdcf7ad3fb073aafa2b4ab43f081613b5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa42fbab130ba416281e0fc82de163ccbce9a788")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShoppingApp.Utility")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShoppingApp.Utility")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2238,6 +2238,9 @@
         }
       },
       "ShoppingApp.Utility/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "8.0.1"
+        },
         "runtime": {
           "ShoppingApp.Utility.dll": {}
         }
