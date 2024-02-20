@@ -13,6 +13,7 @@ C:\Users\iammy\source\repos\ShoppingApp\ShoppingApp.Utility\obj\Debug\net8.0\ref
 C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\bin\Debug\net8.0\ShoppingApp.Utility.deps.json
 C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\bin\Debug\net8.0\ShoppingApp.Utility.dll
 C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\bin\Debug\net8.0\ShoppingApp.Utility.pdb
+C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\obj\Debug\net8.0\ShoppingApp.Utility.csproj.AssemblyReference.cache
 C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\obj\Debug\net8.0\ShoppingApp.Utility.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\obj\Debug\net8.0\ShoppingApp.Utility.AssemblyInfoInputs.cache
 C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\obj\Debug\net8.0\ShoppingApp.Utility.AssemblyInfo.cs
@@ -22,4 +23,3 @@ C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\obj\Debug\ne
 C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\obj\Debug\net8.0\refint\ShoppingApp.Utility.dll
 C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\obj\Debug\net8.0\ShoppingApp.Utility.pdb
 C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\obj\Debug\net8.0\ref\ShoppingApp.Utility.dll
-C:\Users\iammy\source\repos\ShoppingApplication\ShoppingApp.Utility\obj\Debug\net8.0\ShoppingApp.Utility.csproj.AssemblyReference.cache

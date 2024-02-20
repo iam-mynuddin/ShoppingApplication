@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShoppingApp.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa42fbab130ba416281e0fc82de163ccbce9a788")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52275e436d3e0ed623265098b488497aeda2523b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShoppingApp.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShoppingApp.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

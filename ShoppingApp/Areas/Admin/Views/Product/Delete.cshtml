@@ -1,0 +1,50 @@
+﻿@model Product
+<form method="post">
+    @Html.HiddenFor(x => x.ProductId)
+    <div class="container">
+        <div class="row pt-4 pb-4">
+            <div class="col-6">
+                <h1>Delete Product</h1>
+            </div>
+            <div class="col-6 text-end">
+                <a class="btn btn-primary" asp-controller="Product" asp-action="Index"><i class="bi bi-arrow-left"></i>Back</a>
+            </div>
+        </div>
+        <hr />
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="Title"></label>
+            <input class="form-control" disabled asp-for="Title" />
+        </div>
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="Description"></label>
+            <input class="form-control" disabled asp-for="Description" />
+        </div>
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="ISBN"></label>
+            <input class="form-control" asp-for="ISBN" />
+        </div>
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="Author"></label>
+            <input class="form-control" disabled asp-for="Author" />
+        </div>
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="ListPrice"></label>
+            <input class="form-control" disabled asp-for="ListPrice" />
+        </div>
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="Price50"></label>
+            <input class="form-control" disabled asp-for="Price50" />
+        </div>
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="Price100"></label>
+            <input class="form-control" disabled asp-for="Price100" />
+        </div>
+
+        <hr />
+        <div class="row">
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-outline-danger" style="width:150px;justify-content:center;">Delete</button>
+            </div>
+        </div>
+    </div>
+</form>
