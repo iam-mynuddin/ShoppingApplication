@@ -13,6 +13,42 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp\\wwwroot\\images\\product\\209ba4c9-61f1-4e6d-920d-f2d5945d9c25.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\209ba4c9-61f1-4e6d-920d-f2d5945d9c25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp\\wwwroot\\images\\product\\57e9725c-081b-4101-bce2-4a63aad240ed.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\57e9725c-081b-4101-bce2-4a63aad240ed.jpg"
+    },
+    {
+      "Id": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp\\wwwroot\\images\\product\\5bea08e3-e169-4cb7-b4cd-f845aaa24aa3.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\5bea08e3-e169-4cb7-b4cd-f845aaa24aa3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp\\wwwroot\\images\\product\\900097da-3deb-4d21-b29b-0f2f556941f4.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\900097da-3deb-4d21-b29b-0f2f556941f4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp\\wwwroot\\images\\product\\a7887b8c-3c9d-4985-b89f-c07f24fe0a7d.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\a7887b8c-3c9d-4985-b89f-c07f24fe0a7d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp\\wwwroot\\images\\product\\aa56ca3f-5d47-44b2-a0ea-e87ef1c6f89d.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\aa56ca3f-5d47-44b2-a0ea-e87ef1c6f89d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp\\wwwroot\\images\\product\\bf3ca5c7-6d4f-4175-aaae-a65a658ae1a1.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\bf3ca5c7-6d4f-4175-aaae-a65a658ae1a1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp\\wwwroot\\images\\product\\cdc6c7a7-9bdb-48b2-a10c-3e992236f673.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\cdc6c7a7-9bdb-48b2-a10c-3e992236f673.jpg"
+    },
+    {
+      "Id": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp\\wwwroot\\images\\product\\f2586d99-b3e9-47ad-a58e-f3131f133b85.png",
+      "PackagePath": "staticwebassets\\images\\product\\f2586d99-b3e9-47ad-a58e-f3131f133b85.png"
+    },
+    {
       "Id": "C:\\Users\\iammy\\source\\repos\\ShoppingApplication\\ShoppingApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

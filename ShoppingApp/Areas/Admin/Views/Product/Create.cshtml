@@ -1,5 +1,5 @@
 ﻿@model Product
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     <div class="container">
         <div class="row pt-4 pb-4">
             <div class="col-6">
@@ -37,6 +37,11 @@
             <span asp-validation-for="ListPrice" class="text-danger"></span>
         </div>
         <div class="mb-3 row">
+            <label class="p-0" asp-for="Price"></label>
+            <input class="form-control" asp-for="Price" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row">
             <label class="p-0" asp-for="Price50"></label>
             <input class="form-control" asp-for="Price50" />
             <span asp-validation-for="Price50" class="text-danger"></span>
@@ -52,6 +57,10 @@
                 <option disabled selected>--Select Category--</option>
             </select> 
             <span asp-validation-for="CategoryId_FK" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="ImgUrl"></label>
+            <input type="file" name="file" class="form-control" asp-for="ImgUrl" />
         </div>
         <hr />
         <div class="row">

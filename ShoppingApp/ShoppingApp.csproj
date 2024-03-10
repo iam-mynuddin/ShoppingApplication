@@ -24,4 +24,8 @@
     <ProjectReference Include="..\ShoppingApp.DataAccess\ShoppingApp.DataAccess.csproj" />
     <ProjectReference Include="..\ShoppingApp.Models\ShoppingApp.Models.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\product\" />
+  </ItemGroup>
 </Project>

@@ -16,9 +16,11 @@ namespace ShoppingApp.Areas.Admin.Controllers
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
-        public ProductController(IUnitOfWork unitOfWork)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public ProductController(IUnitOfWork unitOfWork,IWebHostEnvironment webHostEnvironment)
         {
             _unitOfWork = unitOfWork;
+            _webHostEnvironment = webHostEnvironment;
         }
         public IActionResult Index()
         {
@@ -36,10 +38,21 @@ namespace ShoppingApp.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Product product)
+        public IActionResult Create(Product product,IFormFile? file)
         {
             if (ModelState.IsValid)
             {
+                string wwwRootPath = _webHostEnvironment.WebRootPath;
+                if (file != null)
+                {
+                    string fileName=Guid.NewGuid().ToString()+Path.GetExtension(file.FileName);
+                    string productPath=Path.Combine(wwwRootPath, @"images\product");
+                    using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+                    product.ImgUrl = productPath + @"\" + fileName;
+                }
                 _unitOfWork.Product.Add(product);
                 _unitOfWork.Save();
                 TempData["sucess"] = "Product added sucessfully!";
@@ -47,7 +60,7 @@ namespace ShoppingApp.Areas.Admin.Controllers
             }
             return View();
         }
-        public IActionResult Edit(int? id)
+        public IActionResult Edit(int? id, IFormFile? file)
         {
             if (id == null || id < 0)
             {
@@ -58,15 +71,32 @@ namespace ShoppingApp.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+            IEnumerable<SelectListItem> CategoryList = _unitOfWork.Category.GetAll().Select(x => new SelectListItem
+            {
+                Text = x.CategoryName,
+                Value = x.CategoryId.ToString()
+            });
+            ViewBag.CategoryList = CategoryList;
             return View(Product);
         }
         [HttpPost]
-        public IActionResult Edit(Product Product)
+        public IActionResult Edit(Product obj, IFormFile? file)
         {
 
             if (ModelState.IsValid)
             {
-                _unitOfWork.Product.Update(Product);
+                string wwwRootPath = _webHostEnvironment.WebRootPath;
+                if (file != null)
+                {
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                    string productPath = Path.Combine(wwwRootPath, @"images\product");
+                    using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+                    obj.ImgUrl = @"images\product\"+ fileName;
+                }
+                _unitOfWork.Product.Update(obj);
                 _unitOfWork.Save();
                 TempData["sucess"] = "Product edited sucessfully!";
                 return RedirectToAction("Index", "Product");

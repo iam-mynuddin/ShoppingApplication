@@ -1,5 +1,5 @@
 ﻿@model Product
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     @Html.HiddenFor(x=>x.ProductId)
     <div class="container">
         <div class="row pt-4 pb-4">
@@ -12,6 +12,8 @@
         </div>
         <hr />
         <div asp-validation-summary="All"></div>
+        <div class="row">
+        <div class="col-10">
         <div class="mb-3 row">
             <label class="p-0" asp-for="Title"></label>
             <input class="form-control" asp-for="Title" />
@@ -52,7 +54,22 @@
             <input class="form-control" asp-for="Price100" />
             <span asp-validation-for="Price100" class="text-danger"></span>
         </div>
-
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="ImgUrl"></label>
+            <input type="file" name="file" class="form-control" asp-for="ImgUrl" />
+        </div>
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="CategoryId_FK"></label>
+            <select class="form-control h-100" asp-for="CategoryId_FK" asp-items="ViewBag.CategoryList">
+                <option disabled selected>--Select Category--</option>
+            </select>
+            <span asp-validation-for="CategoryId_FK" class="text-danger"></span>
+        </div>
+        </div>
+        <div class="col-2">
+            <img src="@Url.Content("~/"+Model.ImgUrl)" class="w-100"/>
+        </div>
+        </div>
         <hr />
         <div class="row">
             <div class="col-12 text-center">
