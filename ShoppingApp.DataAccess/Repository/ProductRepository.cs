@@ -15,9 +15,17 @@ namespace ShoppingApp.DataAccess.Repository
         public ProductRepository(ApplicationDbContext db):base(db)
         {
             this._db = db;            
-        }
+        }   
         public void Update(Product entity)
         {
+            var objFromDb = _db.Products.FirstOrDefault(x => x.ProductId == entity.ProductId);
+            if (objFromDb != null)
+            {
+                if(entity.ImgUrl==null)
+                {
+                    entity.ImgUrl = objFromDb.ImgUrl;
+                }
+            }
             _db.Update(entity);
         }
     }

@@ -1,0 +1,46 @@
+﻿@model Company
+<form method="post">
+    @Html.HiddenFor(x => x.Id)
+    <div class="container">
+        <div class="row pt-4 pb-4">
+            <div class="col-6">
+                <h1>Delete Company</h1>
+            </div>
+            <div class="col-6 text-end">
+                <a class="btn btn-primary" asp-controller="Company" asp-action="Index"><i class="bi bi-arrow-left"></i>Back</a>
+            </div>
+        </div>
+        <hr />
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="Name"></label>
+            <input class="form-control" asp-for="Name" />
+        </div>
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="StreetAddress"></label>
+            <input class="form-control" asp-for="StreetAddress" />
+        </div>
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="City"></label>
+            <input class="form-control" asp-for="City" />
+        </div>
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="State"></label>
+            <input class="form-control" asp-for="State" />
+        </div>
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="PostalCode"></label>
+            <input class="form-control" asp-for="PostalCode" />
+        </div>
+        <div class="mb-3 row">
+            <label class="p-0" asp-for="PhoneNumber"></label>
+            <input class="form-control" asp-for="PhoneNumber" />
+        </div>
+
+        <hr />
+        <div class="row">
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-outline-danger" style="width:150px;justify-content:center;">Delete</button>
+            </div>
+        </div>
+    </div>
+</form>

@@ -88,6 +88,14 @@ namespace ShoppingApp.Areas.Admin.Controllers
                 string wwwRootPath = _webHostEnvironment.WebRootPath;
                 if (file != null)
                 {
+                    if (!String.IsNullOrEmpty(obj.ImgUrl))
+                    {
+                        string oldImgPath=Path.Combine(wwwRootPath, obj.ImgUrl.ToString());
+                        if (System.IO.File.Exists(oldImgPath))
+                        {
+                            System.IO.File.Delete(oldImgPath);
+                        }
+                    }
                     string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
                     string productPath = Path.Combine(wwwRootPath, @"images\product");
                     using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
