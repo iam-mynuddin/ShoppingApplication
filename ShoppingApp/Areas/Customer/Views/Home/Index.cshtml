@@ -13,7 +13,20 @@
                                 <p class="card-title h5 text-dark opacity-75 text-uppercase text-center">@obj.Title </p>
                                 <p class="card-title text-warning text-center">by <b>@obj.Author</b> </p>
                             </div>
+                            <div class="pl-1">
+                                <p class="text-dark text-opacity-75 text-center">
+                                    Price
+                                    <span class="text-decoration-line-through"><b>@obj.ListPrice.ToString("c")</b>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="pl-1">
+                                <p class="text-dark text-opacity-75 text-center">As low as: <b>@obj.Price100.ToString("c")</b> </p>
+                            </div>
                         </div>
+                        <div>
+                            <a asp-controller="Home" asp-action="GetProductDetails" asp-route-id="@obj.ProductId" class="btn btn-primary bg-gradient border-0 form-control p-1">Details</a>
+                            </div>
                     </div>
                 </div>
             </div>

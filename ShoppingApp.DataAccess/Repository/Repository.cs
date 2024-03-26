@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ShoppingApp.DataAccess.Data;
 using ShoppingApp.DataAccess.Repository.IRepository;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace ShoppingApp.DataAccess.Repository
 {
@@ -25,17 +26,33 @@ namespace ShoppingApp.DataAccess.Repository
             dbSet.Add(entity);
         }
 
-        public T Get(Expression<Func<T, bool>> filter)
+        public T Get(Expression<Func<T, bool>> filter, string? strIncludeProp = null)
         {
-            IQueryable<T> entities=dbSet;
-            entities=entities.Where(filter);
-            return entities.FirstOrDefault();
+            IQueryable<T> query=dbSet;
+            if (!String.IsNullOrEmpty(strIncludeProp))
+            {
+                foreach (var prop in strIncludeProp.Split(','))
+                {
+                    if (string.IsNullOrEmpty(prop)) continue;//do not iterate for null or empty values
+                    query.Include(prop);
+                }
+            }
+            query = query.Where(filter);
+            return query.FirstOrDefault();
         }
 
-        public IEnumerable<T> GetAll()
+        public IEnumerable<T> GetAll(string? strIncludeProp=null)
         {
-            IQueryable<T> entities = dbSet;
-            return entities;
+            IQueryable<T> query = dbSet;
+            if (!String.IsNullOrEmpty(strIncludeProp))
+            {
+                foreach (var prop in strIncludeProp.Split(','))
+                {
+                    if (string.IsNullOrEmpty(prop)) continue;//do not iterate for null or empty values
+                    query.Include(prop);
+                }
+            }
+            return query;
         }
 
         public void Remove(T entity)

@@ -37,7 +37,7 @@ namespace ShoppingApp.Models
         [Display(Name ="Category")]
         public int CategoryId_FK {  get; set; }
         [ForeignKey("CategoryId_FK")]
-        public Categories Categories { get; set; }
+        public Categories tblCategories { get; set; }
         public string ImgUrl { get; set; }
     }
 }

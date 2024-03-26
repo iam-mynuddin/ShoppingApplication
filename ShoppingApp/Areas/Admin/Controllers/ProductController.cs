@@ -24,7 +24,7 @@ namespace ShoppingApp.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
-            var objProductList = _unitOfWork.Product.GetAll().ToList();           
+            var objProductList = _unitOfWork.Product.GetAll(strIncludeProp: "tblCategories").ToList();           
             return View(objProductList);
         }
         public IActionResult Create()

@@ -33,5 +33,10 @@ namespace ShoppingApp.Areas.Customer.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        public IActionResult GetProductDetails(int id)
+        {
+            var objResult = _unitOfWork.Product.Get(x => x.ProductId == id,"tblCategories");
+            return View("ProductDetails",objResult);
+        }
     }
 }
