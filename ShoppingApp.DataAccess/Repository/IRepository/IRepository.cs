@@ -11,7 +11,8 @@ namespace ShoppingApp.DataAccess.Repository.IRepository
     {
         //T can be any class. We can perform operations on any table because here we are using generic class.
         IEnumerable<T> GetAll(string? strIncludeProp = null);
-        T Get(Expression<Func<T, bool>> filter, string? strIncludeProp = null);
+        public IEnumerable<T> GetMultiple(Expression<Func<T, bool>> filter, string? strIncludeProp = null, bool track = false);
+        T Get(Expression<Func<T, bool>> filter, string? strIncludeProp = null,bool track=false);
         void Add(T entity);
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entities);

@@ -44,7 +44,7 @@ namespace ShoppingApp.Areas.Admin.Controllers
             {
                 _unitOfWork.Company.Add(company);
                 _unitOfWork.Save();
-                TempData["sucess"] = "Company added sucessfully!";
+                TempData["success"] = "Company added successfully!";
                 return RedirectToAction("Index", "Company");
             }
             return View();
@@ -76,7 +76,7 @@ namespace ShoppingApp.Areas.Admin.Controllers
             {
                 _unitOfWork.Company.Update(obj);
                 _unitOfWork.Save();
-                TempData["sucess"] = "Company edited sucessfully!";
+                TempData["success"] = "Company edited successfully!";
                 return RedirectToAction("Index", "Company");
             }
             return View();
@@ -101,7 +101,7 @@ namespace ShoppingApp.Areas.Admin.Controllers
             {
                 _unitOfWork.Company.Remove(Company);
                 _unitOfWork.Save();
-                TempData["sucess"] = "Company deleted sucessfully!";
+                TempData["success"] = "Company deleted successfully!";
                 return RedirectToAction("Index", "Company");
             }
             return View();

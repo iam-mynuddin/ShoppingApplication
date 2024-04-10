@@ -28,7 +28,7 @@ namespace ShoppingApp.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Categories category)
+        public IActionResult Create(Category category)
         {
             if (Regex.IsMatch(category.CategoryName, @"\d"))
             {
@@ -38,7 +38,7 @@ namespace ShoppingApp.Areas.Admin.Controllers
             {
                 _unitOfWork.Category.Add(category);
                 _unitOfWork.Save();
-                TempData["sucess"] = "Category added sucessfully!";
+                TempData["success"] = "Category added successfully!";
                 return RedirectToAction("Index", "Category");
             }
             return View();
@@ -49,7 +49,7 @@ namespace ShoppingApp.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            Categories? category = _unitOfWork.Category.Get(x => x.CategoryId == id);
+            Category? category = _unitOfWork.Category.Get(x => x.CategoryId == id);
             if (category == null)
             {
                 return NotFound();
@@ -57,7 +57,7 @@ namespace ShoppingApp.Areas.Admin.Controllers
             return View(category);
         }
         [HttpPost]
-        public IActionResult Edit(Categories category)
+        public IActionResult Edit(Category category)
         {
             if (Regex.IsMatch(category.CategoryName, @"\d"))
             {
@@ -67,7 +67,7 @@ namespace ShoppingApp.Areas.Admin.Controllers
             {
                 _unitOfWork.Category.Update(category);
                 _unitOfWork.Save();
-                TempData["sucess"] = "Category edited sucessfully!";
+                TempData["success"] = "Category edited successfully!";
                 return RedirectToAction("Index", "Category");
             }
             return View();
@@ -78,7 +78,7 @@ namespace ShoppingApp.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            Categories? category = _unitOfWork.Category.Get(x => x.CategoryId == id);
+            Category? category = _unitOfWork.Category.Get(x => x.CategoryId == id);
             if (category == null)
             {
                 return NotFound();
@@ -86,13 +86,13 @@ namespace ShoppingApp.Areas.Admin.Controllers
             return View(category);
         }
         [HttpPost]
-        public IActionResult Delete(Categories category)
+        public IActionResult Delete(Category category)
         {
             if (category.CategoryId >= 0)
             {
                 _unitOfWork.Category.Remove(category);
                 _unitOfWork.Save();
-                TempData["sucess"] = "Category deleted sucessfully!";
+                TempData["success"] = "Category deleted successfully!";
                 return RedirectToAction("Index", "Category");
             }
             return View();

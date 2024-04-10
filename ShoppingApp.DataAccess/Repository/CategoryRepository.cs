@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 
 namespace ShoppingApp.DataAccess.Repository
 {
-    public class CategoryRepository : Repository<Categories>, ICategoryRepository
+    public class CategoryRepository : Repository<Category>, ICategoryRepository
     {
         private ApplicationDbContext _db;
         public CategoryRepository(ApplicationDbContext db):base(db)
         {
             this._db = db;            
         }
-        public void Update(Categories entity)
+        public void Update(Category entity)
         {
             _db.Update(entity);
         }

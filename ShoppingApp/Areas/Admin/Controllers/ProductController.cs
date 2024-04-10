@@ -24,7 +24,7 @@ namespace ShoppingApp.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
-            var objProductList = _unitOfWork.Product.GetAll(strIncludeProp: "tblCategories").ToList();           
+            var objProductList = _unitOfWork.Product.GetAll(strIncludeProp: "Category").ToList();           
             return View(objProductList);
         }
         public IActionResult Create()
@@ -55,7 +55,7 @@ namespace ShoppingApp.Areas.Admin.Controllers
                 }
                 _unitOfWork.Product.Add(product);
                 _unitOfWork.Save();
-                TempData["sucess"] = "Product added sucessfully!";
+                TempData["success"] = "Product added successfully!";
                 return RedirectToAction("Index", "Product");
             }
             return View();
@@ -106,7 +106,7 @@ namespace ShoppingApp.Areas.Admin.Controllers
                 }
                 _unitOfWork.Product.Update(obj);
                 _unitOfWork.Save();
-                TempData["sucess"] = "Product edited sucessfully!";
+                TempData["success"] = "Product edited successfully!";
                 return RedirectToAction("Index", "Product");
             }
             return View();
@@ -131,7 +131,7 @@ namespace ShoppingApp.Areas.Admin.Controllers
             {
                 _unitOfWork.Product.Remove(product);
                 _unitOfWork.Save();
-                TempData["sucess"] = "Product deleted sucessfully!";
+                TempData["success"] = "Product deleted successfully!";
                 return RedirectToAction("Index", "Product");
             }
             return View();

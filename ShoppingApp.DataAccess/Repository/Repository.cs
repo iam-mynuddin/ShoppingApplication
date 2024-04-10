@@ -26,21 +26,50 @@ namespace ShoppingApp.DataAccess.Repository
             dbSet.Add(entity);
         }
 
-        public T Get(Expression<Func<T, bool>> filter, string? strIncludeProp = null)
+        public T Get(Expression<Func<T, bool>> filter, string? strIncludeProp = null, bool track = false)
         {
-            IQueryable<T> query=dbSet;
+            IQueryable<T> query;
+            if (track)
+            {
+                query = dbSet;                
+            }
+            else
+            {
+                query = dbSet.AsNoTracking();                
+            }
             if (!String.IsNullOrEmpty(strIncludeProp))
             {
                 foreach (var prop in strIncludeProp.Split(','))
                 {
                     if (string.IsNullOrEmpty(prop)) continue;//do not iterate for null or empty values
-                    query.Include(prop);
+                    query = query.Include(prop);
                 }
             }
             query = query.Where(filter);
             return query.FirstOrDefault();
         }
-
+        public IEnumerable<T> GetMultiple(Expression<Func<T, bool>> filter, string? strIncludeProp = null, bool track = false)
+        {
+            IQueryable<T> query;
+            if (track)
+            {
+                query = dbSet;
+            }
+            else
+            {
+                query = dbSet.AsNoTracking();
+            }
+            if (!String.IsNullOrEmpty(strIncludeProp))
+            {
+                foreach (var prop in strIncludeProp.Split(','))
+                {
+                    if (string.IsNullOrEmpty(prop)) continue;//do not iterate for null or empty values
+                    query = query.Include(prop);
+                }
+            }
+            query = query.Where(filter);
+            return query;
+        }
         public IEnumerable<T> GetAll(string? strIncludeProp=null)
         {
             IQueryable<T> query = dbSet;
@@ -49,7 +78,7 @@ namespace ShoppingApp.DataAccess.Repository
                 foreach (var prop in strIncludeProp.Split(','))
                 {
                     if (string.IsNullOrEmpty(prop)) continue;//do not iterate for null or empty values
-                    query.Include(prop);
+                    query=query.Include(prop);
                 }
             }
             return query;

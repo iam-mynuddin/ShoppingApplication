@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace ShoppingApp.DataAccess.Repository.IRepository
 {
-    public interface ICategoryRepository:IRepository<Categories>
+    public interface ICategoryRepository:IRepository<Category>
     {
-        void Update(Categories entity);
+        void Update(Category entity);
     }
 }

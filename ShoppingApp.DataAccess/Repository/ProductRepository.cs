@@ -1,9 +1,12 @@
-﻿using ShoppingApp.DataAccess.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
+using ShoppingApp.DataAccess.Data;
 using ShoppingApp.DataAccess.Repository.IRepository;
 using ShoppingApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -27,6 +30,12 @@ namespace ShoppingApp.DataAccess.Repository
                 }
             }
             _db.Update(entity);
+        }
+        public Product GetProductWithCategory(Expression<Func<Product, bool>> filter) 
+        {
+            Product obj;
+            obj= (Product)_db.Products.Include(x=>x.Category).Where(filter);
+            return obj;
         }
     }
 }

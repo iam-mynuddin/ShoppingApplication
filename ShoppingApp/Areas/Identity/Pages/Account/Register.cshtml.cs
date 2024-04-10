@@ -174,6 +174,7 @@ namespace ShoppingApp.Areas.Identity.Pages.Account
                 user.StreetAddress= Input.StreetAddress;
                 user.City= Input.City;
                 user.PostalCode= Input.PostalCode;
+                user.State=Input.State;
                 if (Input.Role == StaticDetails.ROLE_COMPANY)
                 {
                     user.CompanyId=Input.CompanyId;
